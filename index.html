@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Images with Flex Box -->
+    <div class="flex-container">
+        <div>
+            <button id="image-1" onclick="openFormFunction()"><img class="img" src="images/form.jpg" alt="images"></button>
+        </div>
+
+        <div>
+            <button id="image-2" onclick="displayFormInfoFunction()"><img class="img" src="images/formData.jpg"
+                    alt="images"></button>
+        </div>
+
+        <div>
+            <button id="image-3" onclick="displaydiceScore()"><img class="img" src="images/scoreBoard.jpg" alt="images"></button>
+        </div>
+
+        <div>
+            <button id="image-4" onclick="generateCouponCodeFunction()"><img class="img" src="images/coupon.jpg"
+                    alt="images"></button>
+        </div>
+    </div>
+
+    <div class="form-Group hidden" id="form">
+        <label for="name">Name: </label>
+        <input type="text" id="name" required>
+
+        <label for="userName">User Name: </label>
+        <input type="text" id="userName" required>
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" required><br><br>
+
+        <button id="sumbitBtn" type="submit" onclick="submitFormInfoFunction()">Submit</button>
+    </div>
+
+   
+    <div class="displayformInfo hidden" id="displayInfo">
+        <h2>Your information is</h2><br>
+        <span id="info"></span><br><br>
+        <p>Click on next Image to proceed further</p>
+    </div>
+
+    <div class="diceScore hidden" id="diceScore">
+        <p>Attempts left : <span id="attemptsleft">0</span></p><br>
+        <div>
+            <button id="dice-Image" onclick="diceClick()"><img class="img" src="images/dice.png"
+                    alt="diceImage"></button><br><br>
+            <p>Remaining Dice Clicks: <span id="diceClicks">3</span></p>
+            <p>Your total score is: <span id="score">0</span></p>
+        </div>
+    </div>
+
+   
+    <div>
+        <img class="hidden"  id="congratsImage" src="images/congratulations.jpg" alt="congratsImage">
+    </div>
+    <div>
+        <img class="hidden img" id="tryAgainImage" src="images/tryAgain.jpg" alt="tryAgainImage">
+    </div>
+</body>
+</html>
+

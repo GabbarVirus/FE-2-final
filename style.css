@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-image: url("images/background.jpg");
+    background-size: cover;
+  }
+  #congratsImage{
+    height: 400px;
+    width: 100%;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+ 
+  .img {
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+  }
+  
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  
+  .form-Group {
+    margin: 1.5rem;
+    font-size: 1.2rem;
+  }
+  
+  #sumbitBtn {
+    padding: 0.2rem;
+    font-size: 1rem;
+  }
+  
+ 
+  #displayInfo {
+    margin: 2rem;
+  }
+  
+  #info {
+    font-size: 1rem;
+  }
+  
+  
+  #diceWthScore {
+    margin: 1.5rem;
+  }
+  
